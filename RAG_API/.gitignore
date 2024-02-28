@@ -1,0 +1,13 @@
+__pycache__
+credentials.py
+rag.log
+pandasai.log
+app.log
+csv_file
+gen-ai-for-healthcare-index
+gen-ai-for-automotive-index
+gen-ai-for-manufacturing-index
+gen-ai-for-lifescience-index
+gen-ai-for-public-sector-index
+exports
+

@@ -1,0 +1,39 @@
+api_details:
+  - endpoint: "/"
+    method: GET
+    description: Returns a message confirming that the API is working.
+  - endpoint: "/get_models"
+    method: GET
+    description: Retrieves the names of available models.
+  - endpoint: "/select_model"
+    method: POST
+    description: Selects a specific model for further configuration.
+    request_body:
+      - model_name: string (Name of the selected model)
+  - endpoint: "/get_industry_names"
+    method: GET
+    description: Retrieves the names of industries associated with documents.
+  - endpoint: "/get_docs"
+    method: POST
+    description: Retrieves documents based on the selected industry name.
+    request_body:
+      - industry_name: string (Name of the industry)
+  - endpoint: "/display_csv_files"
+    method: GET
+    description: Retrieves the list of available CSV files.
+  - endpoint: "/get_csv_files"
+    method: POST
+    description: Retrieves a specific CSV file.
+    request_body:
+      - csv_file: string (Name of the CSV file)
+  - endpoint: "/query_csv"
+    method: POST
+    description: Queries data within a CSV file.
+    request_body:
+      - query: string (Query string)
+  - endpoint: "/query_txt"
+    method: POST
+    description: Processes a query on text data using a specified model.
+    request_body:
+      - query: string (Query string)
+      - model_name: string (Name of the model to use for processing)
